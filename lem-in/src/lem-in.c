@@ -2,6 +2,14 @@
 
 int main(void)
 {
-    ft_putstr("kekes");
+    t_ways  *ways;
+    
+    if (!reading(&ways))
+    {
+        ft_printf("%sERROR\n%s", RED, RESET);
+        return (0);
+    }
+    //road_to_the_hellend(&ways);
+    delete_ways(&ways);
     return (0);
 }
